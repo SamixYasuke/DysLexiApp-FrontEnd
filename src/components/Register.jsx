@@ -16,9 +16,11 @@ const Register = ({ firstName, secondName, dateOfBirth, age, password }) => {
   const [userName, setUserName] = useState("");
   const [errorHasOccured, setErrorHasOccured] = useState(false);
   const [errorText, setErrorText] = useState("");
+  const [isRegistering, setIsRegistering] = useState(false);
 
   const handleRegisterUser = async (e) => {
     e.preventDefault();
+    setIsRegistering(true);
     try {
       setErrorHasOccured(false);
       if (userName) {
@@ -58,6 +60,8 @@ const Register = ({ firstName, secondName, dateOfBirth, age, password }) => {
         console.error(`Error:, ${error.message}`);
         setErrorText("An Unexpected Has Error Occured");
       }
+    } finally {
+      setIsRegistering(false);
     }
   };
 
@@ -82,9 +86,11 @@ const Register = ({ firstName, secondName, dateOfBirth, age, password }) => {
         />
         <div>
           {errorHasOccured && <p>{errorText}</p>}
-
-          <button disabled={!userName} onClick={handleRegisterUser}>
-            CREATE AN ACCOUNT
+          <button
+            disabled={!userName || isRegistering}
+            onClick={handleRegisterUser}
+          >
+            {isRegistering ? "Registering...." : "CREATE AN ACCOUNT"}
           </button>
         </div>
       </form>
