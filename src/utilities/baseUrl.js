@@ -1,3 +1,3 @@
-const baseUrl = "dyslexiapp-backend.vercel.app";
+const baseUrl = `https://dyslexiapp-backend.vercel.app`;
 
 export default baseUrl;
