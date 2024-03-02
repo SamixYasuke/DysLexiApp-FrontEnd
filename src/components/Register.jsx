@@ -1,5 +1,6 @@
 // module imports
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 // utilities import
@@ -17,6 +18,7 @@ const Register = ({ firstName, secondName, dateOfBirth, age, password }) => {
   const [errorHasOccured, setErrorHasOccured] = useState(false);
   const [errorText, setErrorText] = useState("");
   const [isRegistering, setIsRegistering] = useState(false);
+  const navigate = useNavigate();
 
   const handleRegisterUser = async (e) => {
     e.preventDefault();
@@ -40,6 +42,7 @@ const Register = ({ firstName, secondName, dateOfBirth, age, password }) => {
           };
           const userStringifyData = JSON.stringify(userData);
           saveUserDataToLocalStorage(userStringifyData);
+          navigate("/dashboard");
         }
       }
     } catch (error) {
