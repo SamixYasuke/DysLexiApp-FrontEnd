@@ -1,0 +1,25 @@
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+.firstContainer > h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.firstContainer > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.firstContainer > div > a > img {
+  width: 40px;
+  height: 40px;
+}

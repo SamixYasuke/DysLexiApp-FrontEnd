@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=IM+Fell+French+Canon&family=Inter:wght@100..900&family=Lato&family=Martel+Sans:wght@200;300;400&family=Sintony:wght@400;700&family=Skranji:wght@400;700&display=swap");
+
+.headContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.soundDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.soundDiv > p:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: rgba(60, 60, 60, 1);
+  line-height: 31.25px;
+  text-align: center;
+}
+
+.soundDiv > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.soundDiv > div:nth-child(3) > p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32.26px;
+  line-height: 52.16px;
+  text-align: center;
+}

@@ -1,0 +1,93 @@
+.loginContainer {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginContainer > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+  margin: 120px 0 40px 0;
+}
+
+.loginContainer > form > input {
+  width: 380px;
+  height: 50px;
+  padding: 2px 30px;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.loginContainer > form > input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  color: rgba(216, 216, 216, 1);
+}
+
+.loginContainer > form > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 0 70px 0;
+}
+
+.loginContainer > form > div > button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(67, 166, 146, 1);
+  width: 380px;
+  height: 50px;
+  border-radius: 16px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out background-color;
+  cursor: pointer;
+}
+
+.loginContainer > form > div > button:hover {
+  background-color: rgb(54, 141, 124);
+}
+
+.loginContainer > form > div > button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 450px) {
+  .loginContainer > form > input {
+    width: 300px;
+  }
+
+  .loginContainer > form > div > button {
+    width: 300px;
+  }
+}

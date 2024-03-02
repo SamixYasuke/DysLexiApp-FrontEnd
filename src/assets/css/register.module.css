@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=IM+Fell+French+Canon&family=Inter:wght@100..900&family=Lato&family=Martel+Sans:wght@200;300;400&family=Sintony:wght@400;700&family=Skranji:wght@400;700&display=swap");
+
+.registerContainer {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.inputCompleteIndicatorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 20px 0 100px 0;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+.inputCompleteIndicatorContainer > div {
+  width: 65px;
+  height: 17px;
+  border-radius: 17px;
+  background-color: rgba(67, 166, 146, 1);
+  transition: 0.4s cubic-bezier(0.4, 0, 1, 1) background-color;
+}
+
+.registerContainer > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+  margin: 0 0 158px 0;
+}
+
+.registerContainer > form > input {
+  width: 380px;
+  height: 50px;
+  padding: 2px 30px;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.registerContainer > form > input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  color: rgba(216, 216, 216, 1);
+}
+
+.inputError {
+  border-color: rgb(255, 0, 0) !important;
+}
+
+.registerContainer > form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 0 70px 0;
+}
+
+.registerContainer > form > div > p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+  max-width: 390px;
+  padding: 30px;
+}
+
+.registerContainer > form > div > button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(67, 166, 146, 1);
+  width: 380px;
+  height: 50px;
+  border-radius: 16px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out background-color;
+  cursor: pointer;
+}
+
+.registerContainer > form > div > button:hover {
+  background-color: rgb(54, 141, 124);
+}
+
+.registerContainer > form > div > button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 450px) {
+  .inputCompleteIndicatorContainer {
+    gap: 15px;
+  }
+
+  .inputCompleteIndicatorContainer > div {
+    width: 50px;
+  }
+
+  .registerContainer > form > input {
+    width: 300px;
+  }
+
+  .registerContainer > form > div > button {
+    width: 300px;
+  }
+}

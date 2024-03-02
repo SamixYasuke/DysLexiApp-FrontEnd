@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=IM+Fell+French+Canon&family=Inter:wght@100..900&family=Lato&family=Martel+Sans:wght@200;300;400&family=Sintony:wght@400;700&family=Skranji:wght@400;700&display=swap");
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.homeContainer {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.homeContainer > div:nth-child(1) {
+  width: 100%;
+  height: 23px;
+  background-color: rgba(67, 166, 146, 1);
+}
+
+.homeContainer > div:nth-child(2) {
+  box-sizing: border-box;
+  margin: 24px 0 0 0;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeContainer > div:nth-child(2) > p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+  color: rgba(119, 119, 119, 1);
+  max-width: 388px;
+  width: 100%;
+  text-align: center;
+}
+
+.cloudContainer {
+  width: 80%;
+  height: 68%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.cloudContainer > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 40px;
+  animation: moveCloud 4s linear 2s infinite alternate;
+}
+
+.homeContainer > div:nth-child(3) {
+  box-sizing: border-box;
+  margin: 80px 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.homeContainer > div:nth-child(3) > button {
+  width: 100%;
+  max-width: 500px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+}
+
+.homeContainer > div:nth-child(3) > button:nth-child(1) {
+  height: 46px;
+  background-color: rgba(67, 166, 146, 1);
+  border-radius: 16px;
+  color: rgba(255, 255, 255, 1);
+  border-style: none;
+  transition: 0.2s ease-in-out background-color;
+}
+
+.homeContainer > div:nth-child(3) > button:nth-child(1):hover {
+  background-color: rgb(52, 128, 112);
+}
+
+.homeContainer > div:nth-child(3) > button:nth-child(2) {
+  height: 46px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  color: rgba(67, 166, 146, 1);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgba(229, 229, 229, 1);
+  padding: 14px, 168.42px, 18px, 1;
+}
+
+.homeContainer > div:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .cloudContainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@keyframes moveCloud {
+  0% {
+    transform: translateY(-12%);
+  }
+  100% {
+    transform: translateY(12%);
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .homeContainer > div:nth-child(3) {
+    box-sizing: border-box;
+    margin: 138px 0;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .homeContainer > div:nth-child(2) {
+    box-sizing: border-box;
+    margin: 112px 0 0 0;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .homeContainer > div:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

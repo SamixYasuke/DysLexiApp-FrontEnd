@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=IM+Fell+French+Canon&family=Inter:wght@100..900&family=Lato&family=Martel+Sans:wght@200;300;400&family=Sintony:wght@400;700&family=Skranji:wght@400;700&display=swap");
+
+.hearAndTypeContainer {
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.hearAndTypeHeadContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.typeWhatYouSeeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeWhatYouSeeContainer > p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 10.25px;
+  color: rgba(60, 60, 60, 1);
+}
+
+.soundButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 70px 0;
+}
+
+.soundButtonContainer > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.soundButtonContainer > div:nth-child(2) > p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 52.16px;
+  text-align: center;
+}
+
+.hearAndTypeInputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.hearAndTypeInputContainer > input {
+  border-top: rgba(229, 229, 229, 1) solid 1px;
+  border-bottom: rgba(229, 229, 229, 1) solid 1px;
+  border-right: rgba(255, 255, 255, 1) solid 1px;
+  border-left: rgba(0, 0, 0, 1) solid 1px;
+  width: 320px;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 1px 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 52.16px;
+  outline: none;
+}
+
+.hearAndTypeInputContainer > input::placeholder {
+  color: rgb(211, 206, 206);
+}
+
+.hearAndTypeButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.hearAndTypeButtonContainer > button {
+  background-color: rgba(67, 166, 146, 1);
+  border-style: none;
+  width: 320px;
+  height: 46px;
+  border-radius: 16px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out background-color;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.hearAndTypeButtonContainer > button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  pointer-events: none;
+  user-select: none;
+}
+
+.hearAndTypeButtonContainer > button:hover {
+  background-color: rgb(39, 105, 92);
+}
+
+.hearAndTypeWrongAnswerButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+  padding: 30px 0;
+}
+
+.hearAndTypeWrongAnswerButtonContainer > button:nth-child(1) {
+  background-color: rgba(67, 166, 146, 1);
+  width: 150px;
+  height: 46px;
+  border-style: none;
+  border-radius: 16px;
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out background-color;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.hearAndTypeWrongAnswerButtonContainer > button:nth-child(1):hover {
+  background-color: rgb(39, 105, 92);
+}
+
+.hearAndTypeWrongAnswerButtonContainer > button:nth-child(2) {
+  background-color: rgb(233, 32, 32);
+  width: 150px;
+  height: 46px;
+  border-style: none;
+  border-radius: 16px;
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out background-color;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.hearAndTypeWrongAnswerButtonContainer > button:nth-child(2):hover {
+  background-color: rgb(172, 14, 14);
+}
+
+@media screen and (min-height: 780px) {
+  .typeWhatYouSeeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 60px 0;
+  }
+
+  .soundButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 80px 0;
+  }
+
+  .hearAndTypeInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .hearAndTypeButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .hearAndTypeInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+}

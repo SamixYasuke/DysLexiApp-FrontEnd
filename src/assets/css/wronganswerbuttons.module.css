@@ -1,0 +1,43 @@
+.wrongAnswerbuttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+  margin: 30px 0;
+}
+
+.wrongAnswerbuttonContainer > button {
+  width: 175px;
+  height: 46px;
+  border-radius: 16px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  transition: 0.2s ease-in-out background-color;
+}
+
+.wrongAnswerbuttonContainer > button:nth-child(1) {
+  background-color: rgba(67, 166, 146, 1);
+}
+
+.wrongAnswerbuttonContainer > button:nth-child(1):hover {
+  background-color: rgb(45, 109, 96);
+}
+
+.wrongAnswerbuttonContainer > button:nth-child(2) {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.wrongAnswerbuttonContainer > button:nth-child(2):hover {
+  background-color: rgb(206, 15, 15);
+}

@@ -1,0 +1,40 @@
+.levelSkeletonLoaderContainer {
+  display: grid;
+  grid-template-areas: "a b c d";
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  box-sizing: border-box;
+  padding: 50px 0;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  cursor: progress;
+  transition: 0.2s ease-in-out transform;
+  background-color: #ccc;
+  animation: shimmer 1s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .levelSkeletonLoaderContainer {
+    display: grid;
+    grid-template-areas: "a b c";
+    gap: 30px;
+  }
+}

@@ -1,0 +1,35 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 30px 0;
+}
+
+.buttonContainer > button {
+  width: 360px;
+  height: 46px;
+  border-radius: 16px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  background-color: rgba(67, 166, 146, 1);
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  transition: 0.2s ease-in-out background-color;
+}
+
+.buttonContainer > button:hover {
+  background-color: rgb(45, 109, 96);
+}
+
+.buttonContainer > button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  cursor: not-allowed;
+}

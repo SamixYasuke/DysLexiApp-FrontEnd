@@ -1,0 +1,41 @@
+.thirdContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+.thirdContainer > h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.thirdContainer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.thirdContainer > div > img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.thirdContainer > div > a {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.thirdContainer > div > a > img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

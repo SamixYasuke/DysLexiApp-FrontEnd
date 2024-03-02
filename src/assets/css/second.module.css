@@ -1,0 +1,27 @@
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+.secondContainer > h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.secondContainer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.secondContainer > div > img,
+.secondContainer > div > a > img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

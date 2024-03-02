@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=IM+Fell+French+Canon&family=Lato&family=Martel+Sans:wght@200;300;400&family=Sintony:wght@400;700&family=Skranji:wght@400;700&display=swap");
+
+.levelsPage {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.levelsPage > div:nth-child(1) {
+  color: rgb(255, 255, 255);
+  background: rgba(67, 166, 146, 1);
+  box-sizing: border-box;
+  padding: 10px 40px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.levelsPage > div:nth-child(1) > div {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  z-index: -1;
+}
+
+.levelsPage > div:nth-child(1) > h2 {
+  text-align: start;
+  font-family: "Sintony", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.levelsPage > div:nth-child(1) > p {
+  text-align: start;
+  font-family: "Sintony", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+}
+
+.levelsPage > div:nth-child(2) > div:nth-child(1) > p {
+  text-align: center;
+}
+
+.levelsPage > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.levelsPage > div:nth-child(2) > div:nth-child(2) > img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.levelContainer {
+  display: grid;
+  grid-template-areas: "a b c d";
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  box-sizing: border-box;
+  padding: 50px 0;
+}
+
+.levelContainer > div {
+  background-image: url("../images/0star.png");
+  height: 90px;
+  width: 74px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  cursor: pointer;
+  transition: 0.2s ease-in-out transform;
+}
+
+.levelContainer > div:hover {
+  transform: translateY(-6px);
+}
+
+.zeroStar {
+  background-image: url("../images/0star.png") !important;
+  height: 90px;
+  width: 74px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.oneStar {
+  background-image: url("../images/1star.png") !important;
+  height: 90px;
+  width: 74px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.twoStar {
+  background-image: url("../images/2star.png") !important;
+  height: 90px;
+  width: 74px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.threeStar {
+  background-image: url("../images/3star.png") !important;
+  height: 90px;
+  width: 74px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.lockedLevel {
+  background-image: url("../images/Locked.png") !important;
+  height: 90px;
+  width: 74px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.levelContainer > div > p {
+  font-family: "Skranji", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px 0;
+  font-size: 24px;
+  color: rgba(136, 107, 0, 1);
+  user-select: none;
+}
+
+.levelsPage > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1500px) {
+  .levelsPage > div:nth-child(1) {
+    padding: 10px 400px;
+  }
+
+  .levelsPage > div:nth-child(1) > div {
+    position: absolute;
+    top: -30px;
+    right: 200px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .levelContainer {
+    grid-template-areas: "a b c";
+    gap: 30px;
+  }
+
+  .levelsPage > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .levelsPage > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
