@@ -21,6 +21,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [errorHasOccured, setErrorHasOccured] = useState(false);
   const [errorText, setErrorText] = useState("");
+  const [isLogging, setIsLogging] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,10 +33,11 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setIsLogging(true);
     try {
       setErrorHasOccured(false);
       if (userName && password) {
-        const response = await axios.post(`${baseUrl}/auth//login`, {
+        const response = await axios.post(`${baseUrl}/auth/login`, {
           user_name: userName,
           password: password,
         });
@@ -69,6 +72,8 @@ const Login = () => {
         console.error(`Error:, ${error.message}`);
         setErrorText("An Unexpected Has Error Occured, couldn't log in");
       }
+    } finally {
+      setIsLogging(false);
     }
   };
 
@@ -91,9 +96,17 @@ const Login = () => {
           type="text"
           placeholder="PASSWORD"
         />
+        {errorHasOccured && (
+          <p style={{ color: "red", width: "280px", textAlign: "center" }}>
+            {errorText}
+          </p>
+        )}
         <div>
-          <button onClick={handleLogin} disabled={!userName || !password}>
-            LOGIN
+          <button
+            onClick={handleLogin}
+            disabled={!userName || !password || isLogging}
+          >
+            {isLogging ? "Logging" : "Login"}
           </button>
         </div>
       </form>
