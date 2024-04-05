@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=IM+Fell+French+Canon&family=Inter:wght@100..900&family=Lato&family=Martel+Sans:wght@200;300;400&family=Sintony:wght@400;700&family=Skranji:wght@400;700&display=swap");
 
 .getStartedContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   min-height: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
 }
 
 .inputCompleteIndicatorContainer {
