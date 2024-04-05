@@ -44,7 +44,7 @@ export default defineConfig({
         // Define the caching strategies for different file types or routes
         runtimeCaching: [
           {
-            urlPattern: new RegExp('^https://api.example.com/user/units/.*'),
+            urlPattern: /\/levels$/, // Regular expression to match URLs ending with "/levels"
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'api-cache',
