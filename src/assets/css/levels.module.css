@@ -42,6 +42,14 @@
   font-weight: 400;
   font-style: normal;
   line-height: 28px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.levelsPage > div:nth-child(1) > p > img {
+  cursor: pointer;
 }
 
 .levelsPage > div:nth-child(2) > div:nth-child(1) > p {
