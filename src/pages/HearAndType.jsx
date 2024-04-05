@@ -185,6 +185,7 @@ const HearAndType = () => {
           value={userAnswer}
           type="text"
           placeholder="Type What You Hear Here"
+          autoComplete="off"
         />
       </div>
       {!userIsWrong && (
