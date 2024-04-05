@@ -19,7 +19,7 @@ import {
 import baseUrl from "../utilities/baseUrl";
 import removePunctuation from "../utilities/removePunctuation";
 
-// game data imports
+// game data import
 import unitFourData from "../game data/unitFour";
 
 // assets imports
