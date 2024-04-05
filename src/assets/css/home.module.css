@@ -1,26 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=IM+Fell+French+Canon&family=Inter:wght@100..900&family=Lato&family=Martel+Sans:wght@200;300;400&family=Sintony:wght@400;700&family=Skranji:wght@400;700&display=swap");
 
-html {
-  padding: 0;
-  margin: 0;
-}
-
 body {
-  height: 100%;
-  line-height: 1;
   padding: 0;
   margin: 0;
 }
 
 .homeContainer {
-  margin: 0 auto;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-size: 16px;
   overflow-x: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
 }
 
 .homeContainer > div:nth-child(1) {
