@@ -162,6 +162,7 @@ const SeeAndType = () => {
           value={userAnswer}
           type="text"
           placeholder="Type what you see here"
+          autoComplete="off"
         />
       </div>
       {!userIsWrong && (
