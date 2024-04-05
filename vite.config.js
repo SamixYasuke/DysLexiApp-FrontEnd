@@ -38,6 +38,23 @@ export default defineConfig({
           },
         ],
       },
+      workbox: {
+        // Customizing the workbox options
+        cleanupOutdatedCaches: true,
+        // Define the caching strategies for different file types or routes
+        runtimeCaching: [
+          {
+            urlPattern: new RegExp('^https://api.example.com/user/units/.*'),
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'api-cache',
+              expiration: {
+                maxAgeSeconds: 60 * 60 * 24, // Cache for 1 day
+              },
+            },
+          },
+        ],
+      },
     }),
   ],
 });
