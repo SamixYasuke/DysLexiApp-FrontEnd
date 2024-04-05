@@ -38,22 +38,6 @@ export default defineConfig({
           },
         ],
       },
-      workbox: {
-        runtimeCaching: [
-          {
-            urlPattern: ({ url }) => {
-              return url.pathname.endsWith("/levels");
-            },
-            handler: "CacheFirst",
-            options: {
-              cacheName: "api-cache",
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-        ],
-      },
     }),
   ],
 });
