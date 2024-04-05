@@ -12,7 +12,10 @@ import ErrorGettingLevels from "../components/ErrorGettingLevels";
 
 // utility imports
 import baseUrl from "../utilities/baseUrl";
-import { getUserDataFromLocalStorage } from "../utilities/localStorageHandler";
+import {
+  getUserDataFromLocalStorage,
+  removeUserDataFromLocalStorage,
+} from "../utilities/localStorageHandler";
 
 // style import
 import levelStyle from "../assets/css/levels.module.css";
@@ -89,6 +92,11 @@ const Levels = () => {
           console.log("Unit Doesn't Exist");
           return;
         }
+      }
+      if (error.response && error.response.status === 401) {
+        console.log("Expired token");
+        removeUserDataFromLocalStorage();
+        navigate("/");
       }
       console.error(`Error:, ${error.message}`);
     } finally {
