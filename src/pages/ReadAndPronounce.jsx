@@ -1,22 +1,32 @@
+// module imports
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
-import readAndPronounceStyles from "../assets/css/readandpronounce.module.css";
+// components imports
 import Timer from "../components/Timer";
 import ScoreAndLife from "../components/ScoreAndLife";
-import microPhoneIcon from "../assets/images/Microphone Icon.png";
-import activeMicrophoneIcon from "../assets/images/Green Microphone Icon.png";
+import SavingLevel from "../components/SavingLevel";
+
+// game data import
 import unitSixData from "../game data/unitSix";
-import baseUrl from "../utilities/baseUrl";
-import calculateStarsEarned from "../utilities/calculateStarsEarned";
+
+// utility functions imports
 import {
   getUserDataFromLocalStorage,
   removeUserDataFromLocalStorage,
 } from "../utilities/localStorageHandler";
 import { playBase64Audio } from "../utilities/soundSelectorFunctions";
 import removePunctuation from "../utilities/removePunctuation";
-import SavingLevel from "../components/SavingLevel";
+import calculateStarsEarned from "../utilities/calculateStarsEarned";
+import baseUrl from "../utilities/baseUrl";
+
+// assets imports
+import microPhoneIcon from "../assets/images/Microphone Icon.png";
+import activeMicrophoneIcon from "../assets/images/Green Microphone Icon.png";
+
+// style import
+import readAndPronounceStyles from "../assets/css/readandpronounce.module.css";
 
 const ReadAndPronounce = () => {
   const { levelNumber } = useParams();
