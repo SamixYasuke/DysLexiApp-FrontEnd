@@ -50,6 +50,8 @@
 
 .levelsPage > div:nth-child(1) > p > img {
   cursor: pointer;
+  width: 39px;
+  height: 39px;
 }
 
 .levelsPage > div:nth-child(2) > div:nth-child(1) > p {
