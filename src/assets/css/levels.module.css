@@ -220,9 +220,5 @@
     justify-content: center;
     width: 400px;
     margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
