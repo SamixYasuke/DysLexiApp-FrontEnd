@@ -1,0 +1,11 @@
+.dyslexiBearContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dyslexiBearContainer > svg {
+  width: 230px !important;
+  height: 230px !important;
+}
