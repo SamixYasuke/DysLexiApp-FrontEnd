@@ -1,0 +1,1 @@
+import{j as n}from"./index-dL3yQH6R.js";import{I as o}from"./IncorrectAnimation-nKXIVnUZ.js";import"./cloud.module-F1vWAp47.js";const t="_notFoundPageContainer_msxvc_5",e={notFoundPageContainer:t},i=()=>n.jsx("section",{className:e.notFoundPageContainer,children:n.jsxs("div",{children:[n.jsx(o,{}),n.jsx("p",{children:"Not Found"})]})});export{i as default};
